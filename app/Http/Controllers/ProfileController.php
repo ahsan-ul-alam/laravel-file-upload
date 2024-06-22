@@ -11,9 +11,9 @@ class ProfileController extends Controller
         $age = "75";
 
         $data = [
+            'id'=>$id,
             'name'=>$name,
             'age'=>$age,
-            'id'=>$id
         ];
 
 $cookie_name ="access_token";
@@ -23,7 +23,7 @@ $path = '/';
 $domain = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
 $secure = false;
 $httpOnly = true;
-        $cookie_domain = 
+        
         setcookie(
             $cookie_name,
             $value,
